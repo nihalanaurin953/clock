@@ -26,13 +26,14 @@
         function timeUpdation(){
             const currentTime = new Date(); //this will only print the current time not the updated time
             // console.log(currentTime);
+            // let date=currentTime.getDay() + "/" + currentTime.getMonth() + "/" + currentTime.getFullYear();
             let hours = currentTime.getHours();
             let minutes = currentTime.getMinutes();
             let seconds = currentTime.getSeconds();
             let period = hours < 12 ? "AM" : "PM";
            
             // console.log(hours, minutes, seconds);
-            clock.innerHTML = `${hours}:${minutes}:${seconds} ${period}`;
+            clock.innerHTML = `${date} ${hours}:${minutes}:${seconds} ${period}`;
         }
         setInterval(timeUpdation, 1000);
         
