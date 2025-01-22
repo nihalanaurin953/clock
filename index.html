@@ -33,7 +33,7 @@
             let period = hours < 12 ? "AM" : "PM";
            
             // console.log(hours, minutes, seconds);
-            clock.innerHTML = `${date} ${hours}:${minutes}:${seconds} ${period}`;
+            clock.innerHTML = `${hours}:${minutes}:${seconds} ${period}`;
         }
         setInterval(timeUpdation, 1000);
         
